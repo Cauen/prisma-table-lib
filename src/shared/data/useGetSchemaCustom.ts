@@ -15,13 +15,10 @@ const defaultSchema: Schema = { enums: [], models: [] };
 const useGetSchemaCustom = () => {
   const settings = useSettings()
   const settingsSchema = settings?.data?.schema
-  console.log({ settings, settingsSchema })
   const loadSchema = settings?.data?.loadSchema
 
   const [schema, setSchema] = useState(settingsSchema ?? defaultSchema)
   const [loading, setLoading] = useState(false)
-
-  console.log({ schema })
 
   async function load (loader: NonNullable<typeof loadSchema>) {
     setLoading(true)

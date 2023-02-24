@@ -28,8 +28,6 @@ const NRelationModalFooter = ({
           side: "right",
           href: `/panel/${relationModel.name}/?filters=${encodeURI(JSON.stringify(where))}`,
           action: () => {
-            console.log({ where });
-            console.log(encodeURI(JSON.stringify(where)));
             closeAll()
           },
         },

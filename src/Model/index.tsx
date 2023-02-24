@@ -68,11 +68,11 @@ const PrismaModel: React.FC<{
       (initialWhere && listWhere)
 
     useEffect(() => {
-      if (initialWhere)
+      if (initialWhere) {
         set(JSON.stringify(initialWhere))
+      }
     }, [initialWhere])
 
-    // console.log({ listWhere, listWhere, where, allWhere })
 
     // useHandleClearModalFilters()
     const { addLayer, layers, closeOne } = useModal();
@@ -86,7 +86,6 @@ const PrismaModel: React.FC<{
       }
     }, [])
 
-    console.log({isFilterConfigured })
     const variables = {
       take: rowsPerPage,
       skip,
@@ -104,7 +103,6 @@ const PrismaModel: React.FC<{
         return { [sortProps.field]: sortProps.direction }
       })(),
     }
-    console.log({ variables, schemaData })
     const queried = useGetModelItemsQuery({
       model,
       queryType: "findMany",

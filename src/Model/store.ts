@@ -54,18 +54,15 @@ const handleIndex = (id?: string): HandleIndex => (modelName) => id ? `${MODEL_S
 //   const { layers } = useModal()
 //   const toRemoveIds = useList((s) => Object.keys(s.list).filter(el => el.startsWith(MODEL_SUBFILTER)))
 
-//   console.log({ layers })
 
 //   useEffect(() => {
 //     const closedAll = layers.length === 0
 //     // // const toRemoveIds = layers.filter(el => el.id.startsWith(MODEL_SUBFILTER))
 
 //     // if (closedAll) {
-//     //   console.log(`REMOVED ALL`, { toRemoveIds })
 //     // }
 //     return () => {
 //       // if (closedAll) {
-//         console.log("UNMOUNT", { layers, toRemoveIds, closedAll })
 //       // }
 //     }
 //   }, [layers.length])

@@ -10,7 +10,6 @@ export default function SelectModel(props: SettingsProps) {
 
 //   const selectedSchema = useSchemaSettings(s => s.selectedSchema)
   const setState = useSchemaSettings(s => s.setState)
-  console.log({ enums, models })
 
   return (
     <div className="flex flex-col gap-4">

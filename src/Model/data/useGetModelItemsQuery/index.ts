@@ -30,8 +30,6 @@ export const useGetModelItemsQuery = (props: ItemsQueryProps) => {
     const modelName = model?.name || "";
     const showFields = filterModelFieldsFromCustomization(model, viewType, customizations);
     
-    console.log({ modelName })
-
     const { list } = useSettings()
     const { handleFieldsQueryString, handleQueryCompleted } = list || {}
     const fields = getFieldsQueryString({ model, customizations, models, showFields })
