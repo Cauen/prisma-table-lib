@@ -10,12 +10,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxgfr/typescript-react-lib-swc.git"
+    "url": "https://github.com/Cauen/prisma-table-lib.git"
   },
   "bugs": {
-    "url": "https://github.com/maxgfr/typescript-react-lib-swc/issues"
+    "url": "https://github.com/Cauen/prisma-table-lib/issues"
   },
-  "homepage": "https://github.com/maxgfr/typescript-react-lib-swc#readme",
+  "homepage": "https://github.com/Cauen/prisma-table-lib#readme",
   "keywords": [
     "boilerplate",
     "typescript",

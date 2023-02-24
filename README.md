@@ -10,7 +10,7 @@ It also uses:
 ## Clone repository and install dependencies
 
 ```sh
-git clone https://github.com/maxgfr/typescript-react-lib-swc # For cloning the repository
+git clone https://github.com/Cauen/prisma-table-lib # For cloning the repository
 cd typescript-react-lib-swc # To navigate to the repository root
 yarn # Install dependencies
 ```
