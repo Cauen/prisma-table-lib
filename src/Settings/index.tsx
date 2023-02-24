@@ -6,8 +6,6 @@ import ModelFields from "./ModelFields";
 import SelectModel from "./SelectModel";
 import { useSchemaSettings } from "./store";
 
-type SettingsProps = {};
-
 const RunModel = () => {
   const { data: schemaData } = useGetSchema2();
   const { enums, models } = schemaData;
@@ -25,7 +23,7 @@ const RunModel = () => {
   );
 };
 
-export default function Settings(props: SettingsProps) {
+export default function Settings() {
   return (
     <div className="flex flex-col gap-4">
       <SelectModel />

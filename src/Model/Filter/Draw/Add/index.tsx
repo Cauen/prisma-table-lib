@@ -80,7 +80,7 @@ export default function DrawAdd({ model }: FilterProps) {
             onChange={(e) => setType(e.target.value as TypeOptions)}
           >
             {types.map((type) => (
-              <option value={type}>{type}</option>
+              <option key={type} value={type}>{type}</option>
             ))}
           </select>
         </div>
@@ -91,7 +91,7 @@ export default function DrawAdd({ model }: FilterProps) {
           >
             <option>-</option>
             {options.map((option) => (
-              <option value={option}>{option}</option>
+              <option key={type} value={option}>{option}</option>
             ))}
           </select>
         </div>

@@ -3,8 +3,8 @@ type Obj = Record<any, any>
 // When open row and go back to list, dont capture route change
 export function deepAssign2(target: Obj, ...sources: Obj[]) {
     for (const source of sources) {
-        for (let k in source) {
-            let vs = source[k], vt = target[k]
+        for (const k in source) {
+            const vs = source[k], vt = target[k]
             if (Object(vs) == vs && Object(vt) === vt) {
                 target[k] = deepAssign2(vt, vs)
                 continue

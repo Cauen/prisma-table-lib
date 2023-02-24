@@ -2,9 +2,7 @@ import * as React from "react";
 import useGetSchema2 from "../../shared/data/useGetSchema2";
 import { useSchemaSettings } from "../store";
 
-type SettingsProps = {};
-
-export default function SelectModel(props: SettingsProps) {
+export default function SelectModel() {
   const { data: schemaData } = useGetSchema2();
   const { enums, models } = schemaData;
 

@@ -1,6 +1,6 @@
-import * as React from "react";
-import { classNames } from "../../utils/styles";
-import Label from "../Label";
+import * as React from 'react';
+import { classNames } from '../../utils/styles';
+import Label from '../Label';
 
 type CustomInputReact = React.InputHTMLAttributes<HTMLInputElement>;
 export interface CustomInputProps extends CustomInputReact {
@@ -11,7 +11,7 @@ export interface CustomInputProps extends CustomInputReact {
 const Input = React.forwardRef<
   HTMLTextAreaElement & HTMLInputElement,
   CustomInputProps
->(({ label, fullWidth = true, id, type = "text", ...rest }, ref) => {
+>(({ label, fullWidth = true, id, type = 'text', ...rest }, ref) => {
   return (
     <div>
       <div className="col-span-6 sm:col-span-3">
@@ -22,8 +22,8 @@ const Input = React.forwardRef<
           autoComplete="given-name"
           type={type}
           className={classNames(
-            "mt-1 block rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm",
-            fullWidth ? "w-full" : ""
+            'mt-1 block rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm',
+            fullWidth ? 'w-full' : '',
           )}
           {...rest}
         />
@@ -31,5 +31,6 @@ const Input = React.forwardRef<
     </div>
   );
 });
+Input.displayName = "Input";
 
 export default Input;

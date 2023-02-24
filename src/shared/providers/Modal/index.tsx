@@ -2,9 +2,7 @@ import * as React from "react";
 import { ModalProvider } from "../../components/Modal/Context";
 import { useModal } from "./store";
 
-type ModalProps = {};
-
-export default function Modals(props: ModalProps) {
+export default function Modals() {
   const { addLayer, layers } = useModal();
 
   return (

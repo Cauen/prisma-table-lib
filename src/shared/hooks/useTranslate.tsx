@@ -9,8 +9,6 @@ import { ModalActions, useModal } from "../providers/Modal/store";
 import { TranslatableLabels, useSettings } from "../providers/Settings";
 import useDeleteRow from "./useDeleteRow";
 
-type useTranslateProps = {};
-
 export default function useTranslate() {
   const { data: schemaData } = useGetSchema2();
   const { models, customizations } = schemaData;
