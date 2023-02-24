@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/Cauen/prisma-table-lib/compare/v1.2.0...v1.3.0) (2023-02-24)
+
+
+### Features
+
+* fake readme end ([1c77ba3](https://github.com/Cauen/prisma-table-lib/commit/1c77ba3a014072728818be65e605058820001fd0))
+
+
+### Reverts
+
+* semantic release remove --no-ci ([30439c7](https://github.com/Cauen/prisma-table-lib/commit/30439c732aaa34c564d43c7aa39a4a677eb749f6))
+
 # [1.2.0](https://github.com/Cauen/prisma-table-lib/compare/v1.1.2...v1.2.0) (2023-02-24)
 
 
