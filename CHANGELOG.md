@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/Cauen/prisma-table-lib/compare/v1.3.0...v1.4.0) (2023-02-24)
+
+
+### Features
+
+* fake end at readme ([a495fe7](https://github.com/Cauen/prisma-table-lib/commit/a495fe747aaccfebd0c490241b8cb6747ac08e21))
+* fake trying github actions again ([e2fa1ec](https://github.com/Cauen/prisma-table-lib/commit/e2fa1ec5ed29f84376997df73c3978409e7d1d9c))
+
 # [1.3.0](https://github.com/Cauen/prisma-table-lib/compare/v1.2.0...v1.3.0) (2023-02-24)
 
 
