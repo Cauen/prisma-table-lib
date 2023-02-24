@@ -1,10 +1,13 @@
 {
-  "name": "typescript-react-lib-swc",
-  "version": "1.1.2",
+  "name": "my-sample-react-lib",
+  "version": "0.0.8",
   "author": "maxgfr",
   "license": "MIT",
   "description": "A minimalist typescript swc starter for react",
   "main": "./build/index.js",
+  "files": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/maxgfr/typescript-react-lib-swc.git"
@@ -13,9 +16,6 @@
     "url": "https://github.com/maxgfr/typescript-react-lib-swc/issues"
   },
   "homepage": "https://github.com/maxgfr/typescript-react-lib-swc#readme",
-  "files": [
-    "build"
-  ],
   "keywords": [
     "boilerplate",
     "typescript",
@@ -30,6 +30,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "clean": "rimraf build",
+    "prebuild": "yarn clean",
     "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -w -p tsconfig.build.json",
     "build:swc": "swc ./src -d build",
@@ -43,11 +44,25 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
+    "@apollo/client": "*",
+    "@headlessui/react": "*",
+    "@heroicons/react": "*",
+    "@prisma/generator-helper": "*",
+    "graphql": "*",
     "react": "*",
-    "react-dom": "*"
+    "react-data-table-component": "*",
+    "react-dom": "*",
+    "styled-components": "*",
+    "zustand": "*",
+    "immer": "*"
   },
   "devDependencies": {
+    "@apollo/client": "^3.7.1",
     "@babel/core": "^7.20.2",
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^1.0.6",
+    "@prisma/generator-helper": "^4.10.1",
+    "@prisma/internals": "^4.10.1",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
@@ -84,14 +99,19 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-storybook": "^0.6.7",
     "gh-pages": "^4.0.0",
+    "graphql": "^16.6.0",
+    "immer": "^9.0.19",
     "jest": "29.3.1",
     "jest-environment-jsdom": "^29.3.0",
     "nodemon": "2.0.20",
     "prettier": "2.8.3",
     "react": "^18.2.0",
+    "react-data-table-component": "^7.5.3",
     "react-dom": "^18.2.0",
     "rimraf": "3.0.2",
     "semantic-release": "^19.0.5",
-    "typescript": "^4.8.4"
+    "styled-components": "^5.3.6",
+    "typescript": "^4.9.5",
+    "zustand": "^4.1.3"
   }
 }
