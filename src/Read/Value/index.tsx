@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { DMMF } from "@prisma/generator-helper";
 import * as React from "react";
 import PrismaModel from "../../Model";

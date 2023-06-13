@@ -1,6 +1,6 @@
 {
   "name": "my-sample-react-lib",
-  "version": "0.0.8",
+  "version": "1.4.0",
   "author": "maxgfr",
   "license": "MIT",
   "description": "A minimalist typescript swc starter for react",
@@ -10,12 +10,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxgfr/typescript-react-lib-swc.git"
+    "url": "https://github.com/Cauen/prisma-table-lib.git"
   },
   "bugs": {
-    "url": "https://github.com/maxgfr/typescript-react-lib-swc/issues"
+    "url": "https://github.com/Cauen/prisma-table-lib/issues"
   },
-  "homepage": "https://github.com/maxgfr/typescript-react-lib-swc#readme",
+  "homepage": "https://github.com/Cauen/prisma-table-lib#readme",
   "keywords": [
     "boilerplate",
     "typescript",
@@ -27,8 +27,8 @@
   "scripts": {
     "dev": "nodemon",
     "develop": "node -r @swc-node/register ./src/index.ts",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
     "clean": "rimraf build",
     "prebuild": "yarn clean",
     "build": "tsc -p tsconfig.build.json",
@@ -37,10 +37,10 @@
     "build:swc:watch": "swc ./src -d build -w",
     "lint": "eslint ./src --ext .ts,.tsx",
     "prettier": "prettier --write './src/**/*.{ts,js,json,tsx,jsx}'",
-    "storybook:start": "start-storybook -p 6006",
-    "storybook:build": "build-storybook",
-    "storybook:deploy": "npm run storybook:build && gh-pages -d storybook-static",
-    "storybook:deploy:action": "npm run storybook:build && gh-pages -d storybook-static -u \"github-actions-bot <support+actions@github.com>\"",
+    "storybook:start": "export NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
+    "storybook:build": "export NODE_OPTIONS=--openssl-legacy-provider && build-storybook",
+    "storybook:deploy": "export NODE_OPTIONS=--openssl-legacy-provider && npm run storybook:build && gh-pages -d storybook-static",
+    "storybook:deploy:action": "export NODE_OPTIONS=--openssl-legacy-provider && npm run storybook:build && gh-pages -d storybook-static -u \"github-actions-bot <support+actions@github.com>\"",
     "release": "semantic-release"
   },
   "peerDependencies": {
@@ -49,12 +49,12 @@
     "@heroicons/react": "*",
     "@prisma/generator-helper": "*",
     "graphql": "*",
+    "immer": "*",
     "react": "*",
     "react-data-table-component": "*",
     "react-dom": "*",
     "styled-components": "*",
-    "zustand": "*",
-    "immer": "*"
+    "zustand": "*"
   },
   "devDependencies": {
     "@apollo/client": "^3.7.1",
@@ -69,13 +69,13 @@
     "@semantic-release/github": "^8.0.6",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-interactions": "^6.5.13",
-    "@storybook/addon-links": "^6.5.13",
-    "@storybook/builder-webpack4": "^6.5.13",
-    "@storybook/manager-webpack4": "^6.5.13",
-    "@storybook/react": "^6.5.13",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "@swc-node/register": "1.5.5",
     "@swc/cli": "0.1.59",
@@ -112,6 +112,7 @@
     "semantic-release": "^19.0.5",
     "styled-components": "^5.3.6",
     "typescript": "^4.9.5",
+    "vitest": "^0.28.5",
     "zustand": "^4.1.3"
   }
 }

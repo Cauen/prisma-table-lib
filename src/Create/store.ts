@@ -36,7 +36,7 @@ export const useCreate = create<State & Actions>()(
                 state.update._touchedFields.push(fieldName)
               }
               
-              let modelObject = state[type][modelName]
+              const modelObject = state[type][modelName]
               if (modelObject) {
                 modelObject[fieldName] = value
               } else {

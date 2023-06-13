@@ -1,8 +1,8 @@
 export function setGetParam(key: string, value: string) {
-    if (!!history.pushState) {
-        var params = new URLSearchParams(window.location.search);
+    if (typeof history.pushState !== "undefined") {
+        const params = new URLSearchParams(window.location.search);
         params.set(key, value);
-        var newUrl =
+        const newUrl =
             window.location.origin +
             window.location.pathname +
             "?" +

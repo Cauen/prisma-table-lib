@@ -1,8 +1,6 @@
 import * as React from "react";
 
-type LoadingProps = {};
-
-export default function Loading(props: LoadingProps) {
+export default function Loading() {
   return (
     <div>
       <div role="status" className="space-y-2.5 animate-pulse max-w-lg">
